@@ -1,2 +1,2 @@
 # ING102
-Innlevering - gruppe nr 8. Varekart i butikk
+GitHub for innlevering i Web/HTML delen av faget. Gruppe nr 8, "Varekart i butikk".
