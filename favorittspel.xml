@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<favorittspel>
+    <stian>
+        <spel>
+            <namn>Dark Souls</namn>
+            <timar>133</timar>
+        </spel>
+        <spel>
+            <namn>Dark Souls 3</namn>
+            <timar>91</timar>
+        </spel>
+        <spel>
+            <namn>Terraria</namn>
+            <timar>264</timar>
+        </spel>
+        <spel>
+            <namn>Garry's Mod</namn>
+            <timar>339</timar>
+        </spel>
+        <spel>
+            <namn>Minecraft</namn>
+            <timar>∞</timar>
+        </spel>
+        <spel>
+            <namn>Xenoblade Chronicles 2</namn>
+            <timar>80</timar>
+        </spel>
+    </stian>
+</favorittspel>

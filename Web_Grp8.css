@@ -1,0 +1,138 @@
+﻿/* Generell styling, gjeld for alle sider */
+
+html, body {
+    height: 85%;
+}
+
+body {
+    background-color: rgb(101, 195, 253);
+    font-family: Verdana, Geneva, sans-serif;
+}
+button {
+    font-family: Verdana, Geneva, sans-serif;
+}
+nav {
+    border: 5px solid rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+nav ul {
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(88, 62, 0);
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    color: white;
+}
+table {
+    border-collapse: collapse;
+}
+table tr th, td{
+    border: 2px solid black;
+    padding: 5px;
+}
+table tr td img{
+    width: 200px; 
+    height: 100px;
+}
+.header {
+    text-align: center;
+    height: auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.footer {
+    margin: 20px;
+    border-radius: 15px;
+    border: 5px solid rgb(197, 197, 197);
+    background-color: rgb(197, 197, 197);
+    color: rgb(88, 62, 0);
+    position: relative;
+    text-align: center;
+}
+
+.footer button {
+    color: rgb(88, 62, 0);
+}
+.main_div {
+    /* Standard styling for hovuddiv på sidene */
+    min-height: 80%;
+    margin: 20px;
+}
+
+.main_div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.hogre_div {
+    /* Styling for høgre side */
+    float: right;
+    width: 63%;
+    min-height: 80%;
+}
+.venstre_div {
+    /* For venstre side */
+    width: 35%;
+}
+.venstre_div img {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.main_tekst {
+    height: 50%;
+}
+.main_venstre_liste {
+    min-width: 10%;
+    float: left;
+    margin-right: 25px;
+}
+.main_hogre_tabell {
+    margin: auto;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .venstre_div, .hogre_div {
+        width: 100%;
+    }
+}
+
+/* Styling for framsida: (skal sjå litt annleis ut)*/
+.start_tekst {
+    width: 48%;
+}
+.start_hogre {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.start_hogre img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/*litt styling for prosjekt-sida*/
+
+#ide{
+    margin-right: 200px;
+
+}
