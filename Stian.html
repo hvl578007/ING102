@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="Web_Grp8.css" />
     <script src="Scripts.js"></script>
 </head>
-<body onload="hentXMLSpel('namn', 'timar', 'testTab');">
+<body>
     <div class="header">
         <h2>Stian Grønås</h2>
     </div>
@@ -49,8 +49,7 @@
             </div>
 
             <div id="testTab" class="main_hogre_tabell">
-                <h4>Nokon favorittspel:</h4>
-                NB! Tabellen fungerer ikkje i Chrome (XML)
+                <button id="XMPspel" type="button" onclick="hentXMLSpel('namn','timar','testTab')">Favorittspela til stian</button>
             </div>
         </div>
 

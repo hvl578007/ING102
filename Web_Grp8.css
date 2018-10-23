@@ -37,6 +37,7 @@ nav ul li a {
 }
 nav ul li a:hover{
     color: white;
+    transition: .5s ease;
 }
 table {
     border-collapse: collapse;
@@ -132,7 +133,71 @@ table tr td img{
 
 /*litt styling for prosjekt-sida*/
 
-#ide{
+.ide{
     margin-right: 200px;
 
+}
+
+/* CSS kode for knappane på prosjektsida */
+
+.knapp_Link {
+    display: inline-block;
+}
+
+.knapp_Link a{
+    background-color: white;
+    color: rgb(88, 62, 0);
+    border: 2px solid #555555;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: fixed;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    width: 230px;
+    /*Eventuelt min-width: 17%;*/
+}
+
+.knapp_Link a:hover{
+    background-color: #555555;
+    color: white;
+    transition: .5s ease;
+}
+
+#k1{
+    bottom: 60px;
+    right: 10px;
+}
+
+#k2 {
+
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Styla knappar */
+
+.butt{
+    width: 30%;
+}
+
+.butt a{
+    width: 100%;
+    background-color: white;
+     border: none;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; 
+}
+
+.butt:hover a{
+    transition: .5s ease;
+    text-decoration: none;
+    opacity: 1;
 }

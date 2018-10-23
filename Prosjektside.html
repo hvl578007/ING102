@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang ="no">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="Scripts.js"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="Web_Grp8.css" />
-<title>Prosjektet</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="Scripts.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="Web_Grp8.css" />
+	
+	<title>Prosjektet</title>
 
 </head>
 <body>
@@ -25,29 +26,52 @@
 
 	<div class="hogre_div">
 		<div><h4>Forretningside:</h4>
-		<p id="ide">En sliter ofte med å finne frem i nye- eller omorganiserte butikker og vi vil gjøre butikkbesøket enklere og raskere for brukeren. Vår ide er å lage en nettside med kart over varer og avdelinger i forskjellige butikker.
+		<p class="ide">En sliter ofte med å finne frem i nye- eller omorganiserte butikker og vi vil gjøre butikkbesøket enklere og raskere for brukeren. Vår ide er å lage en nettside med kart over varer og avdelinger i forskjellige butikker.
 		<br><br>
 		Kartet skal ha en oversikt over hvor brukeren befinner seg og ved å trykke på de forskjellige avdelingene vil en liste over forskjellige varer dukke opp for den enkelte avdelingen. Hvis brukeren ikke klarer å finne varen på kartet, skal brukeren kunne raskt søke opp varene og lett kunne se varenes beliggenhet. Etter å ha valgt en vare skal det dukke opp en veibeskrivelse i kartet fra hvor brukeren er til hvor varen er. Informasjon om beliggenheten til varen vil vise hvilken etasje og hvilken hylle varen er plassert i. I tillegg burde det være mulighet for å legge inn flere varer for å få den mest effektive ruten mellom dem. Brukeren skal også kunne søke opp eventuelle toaletter, kasser, kundehjelp og hjelpestasjoner, og mer, alt etter hva slags type butikk det er.
 		<br><br>
 		Vår plan er først å starte med en butikk og lage et fungerende produkt for den ene butikken. Vi vil starte med en nettside som skal være brukervennlig på mobil og så kan vi senere lage en app for iOS og Andriod. Etter å ha laget et godt nok produkt for butikken, kan vi ekspandere til andre butikker og lage kart for så mange butikker som vi kan.
 		<br>
 		</p>
+		<h4>Statusrapport:</h4>
+		<p class="ide">Prosjektet har så langt vært planlagt nøye. Vår plan er å ha kart for butikker og sluttrapporten
+		nærmer seg å bli ferdig. Rapporten inneholder en grundig markedsanalyse, en pessimistisk/realistisk
+		økonomi, og en detaljert planleggings plan. 
+		<br><br>
+		Vi har gått nøye gjennom hvem kunden og hvem brukeren er og planlagt hvordan vi skal gå frem
+		med å integrere disse gruppene i prosjektet og produktet. Kunden skal være butikkene og når vi får
+		dem med på prosjektet kan vi deretter rette oss mot brukeren av produktet. 
+		<br><br>
+		For planlegging av hvordan prosjektet skal utføres har vi tatt i bruk gantt- skjema og pert skjema som
+		har hjulpet med å visualisere og vise til kritiske veier og avgjørelser som bør har fokus og ekstra tid.
+		Budsjetteringsplanen er satt opp med realistisk syn på hvor mye prosjektet vil koste i sin helhet.
+		<br><br>
+		Nettsiden som har blitt utviklet per dags dato består av fremside, en side om hvert gruppemedlem
+		og en side som beskriver prosjektet. I det siste har felles design av hver side vært i fokus, samt at
+		nettsidene har fått mer «liv» etter implementering av java script. Det har blitt utviklet knapper på
+		hver side som heter «dark mode» og «fun mode». Disse knappene endrer på utsynet til nettsiden og
+		har gjort nettsiden mer livlig. </p>
 		</div>
-		<div><a href="Prosjektplan_gruppe8.pdf" download="">Her er en lenke til vår prosjektbeskrivelse</a></div>
-	</div>
+			<div class="knapp_Link">
+				<a id="k1" href="statusrapport.pdf" download="" target="_blank" data-toggle="tooltip" data-placement="auto" title="Trykk for å laste ned">Last ned statusrapport</a>
+			</div>
+			<div class="knapp_Link">
+				<a id="k2" href="Prosjektplan_gruppe8.pdf" download="" target="_blank" data-toggle="tooltip" data-placement="auto" title="Trykk for å laste ned">Last ned prosjektbeskrivelse</a>
+			</div>
+		</div>
 
 	<div class="venstre_div">
-		<img src="Sketch.png" alt="">
+		<img src="Sketch.png" alt="" title="Skisse over kartet">
 	</div>
 
 </div>
 
 <div class="footer">        
-            <p>Copyright Stian Grønås/Gruppe 8 - 2018</p>
-            <button id="darkMode" type="button" onclick="darkMode('darkMode', 'funTimes')">Darkmode</button>
-            <button id="funTimes" type="button" onclick="funTimes('funTimes', 'darkMode')">Fun times</button>
-            <p>WIP - Fungerer best på enkelte sider (framside)</p>
-    </div>
+		<p>Copyright Stian Grønås/Gruppe 8 - 2018</p>
+		<button id="darkMode" type="button" onclick="darkMode('darkMode', 'funTimes')">Darkmode</button>
+		<button id="funTimes" type="button" onclick="funTimes('funTimes', 'darkMode')">Fun times</button>
+		<p>WIP - Fungerer best på enkelte sider (framside)</p>
+</div>
 
 </body>
 </html>

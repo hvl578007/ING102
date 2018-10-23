@@ -1,6 +1,13 @@
-﻿//xml-kode
+﻿var hidden_d = false;
+var hidden_f = false;
+var buttonTxt;
+
 
 function hentXMLSpel(tag1, tag2, id) {
+    //tag1 er for første taggen
+    //tag2 er for den andre taggen
+    //treng eigentleg ikkje desse
+    //id der der ein skal setje tabellen inn
     var Connect = new XMLHttpRequest();
     
     Connect.open("GET", "favorittspel.xml", false);
@@ -11,9 +18,9 @@ function hentXMLSpel(tag1, tag2, id) {
     var timar = docX.getElementsByTagName(tag2);
 
     //Dersom namn eller timar ikkje har like mange element i XML-fila,
-    //vil ikkje tabellen bli skreve ut pga index out of bounds. Må bli fiksa...
+    //vil ikkje tabellen bli skreve ut pga index out of bounds. Burde bli fiksa...
 
-    var tilHTML = "<table><tr><th>Spel</th><th>Timar</th></tr>";
+    var tilHTML = "<h4>Nokon favorittspel:</h4><table><tr><th>Spel</th><th>Timar</th></tr>";
 
     for (i = 0; i < namn.length; i++) {
         tilHTML += "<tr><td>";
@@ -23,17 +30,15 @@ function hentXMLSpel(tag1, tag2, id) {
         tilHTML += "</td></tr>";
     }
     tilHTML += "</table>"
-    document.getElementById(id).innerHTML += tilHTML;
+    document.getElementById(id).innerHTML = tilHTML;
 }
     
 //darkmode og funtime
-var hidden_d = false;
-var hidden_f = false;
-var buttonTxt;
 
 function darkMode(id, id2) {
+    //id er sjølve knappen ein trykker på
+    //id2 er den andre knappen (fun times)
     buttonTxt = document.getElementById(id).innerHTML;
-    hidden = false;
     if (buttonTxt == "Darkmode") {
         buttonTxt = "Normal";
         document.body.style.backgroundColor = 'black';
@@ -52,20 +57,21 @@ function darkMode(id, id2) {
         document.getElementById(id2).style.visibility = 'visible';
     }
 }
+
 function funTimes(id, id2) {
+    //id er sjølve knappen ein trykker på
+    //id2 er den andre knappen (darkmode)
     buttonTxt = document.getElementById(id).innerHTML;
     if (buttonTxt == "Fun times") {
         buttonTxt = "Normal";
         document.body.style.backgroundColor = 'pink';
         document.body.style.fontFamily = 'Comic Sans MS, cursive, sans-serif';
         document.getElementById(id).innerHTML = buttonTxt;
-        endreBilde("fartmedbart.jpg", 'bildeJS');
     } else {
         buttonTxt = "Fun times";
         document.body.style.backgroundColor = 'rgb(101, 195, 253)';
         document.body.style.fontFamily = 'Verdana, Geneva, sans-serif';
         document.getElementById(id).innerHTML = buttonTxt;
-        endreBilde("Gruppe2.jpg", 'bildeJS');
     }
     hidden_d = !hidden_d;
     if (hidden_d) {
@@ -75,6 +81,36 @@ function funTimes(id, id2) {
     }
 }
 
+var nyttBilde = false;
+
+function funFramside(bildeNy, bildeOrig, id, id2, id3) {
+    //lager denne for å enkelt få endre bilde og tekst på framsida
+    //bildeny er det bilde som skal endrast når ein trykker på funtimes knappen
+    //bildeorig er det originale bildet
+    funTimes(id, id2);
+    if (!nyttBilde) {
+        endreBilde(bildeNy, id3);
+        nyttBilde = true;
+    } else {
+        endreBilde(bildeOrig, id3);
+        nyttBilde = false;
+    }
+}
+
 function endreBilde(a, id) {
     document.getElementById(id).src = a;
 }
+
+/*
+function endreTekstComic() {
+    document.body.style.backgroundColor = 'pink';
+    document.body.style.fontFamily = 'Comic Sans MS, cursive, sans-serif';
+    document.body.getElementsByClassName('header').style.fontFamily = 'Comic Sans MS, cursive, sans-serif';
+}
+
+function endreTekstVerdana() {
+    document.body.style.backgroundColor = 'rgb(101, 195, 253)';
+    document.body.style.fontFamily = 'Verdana, Geneva, sans-serif';
+    document.body.getElementsByClassName('header').style.fontFamily = 'Verdana, Geneva, sans-serif';
+}
+*/
